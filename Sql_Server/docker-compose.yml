@@ -10,7 +10,7 @@ services:
       SA_PASSWORD: "Mi_Super_Mega_Clave_Sql_Server"
       ACCEPT_EULA: "Y"
     volumes:
-      - /home/ubuntu/pyDataChallenge:/tf
+      - C:/Users/Ema/Desktop/Pi DE Challenge_LINK/pyDataChallenge/Sql_Server:/tf
     restart: always
   app:
     container_name: python
@@ -21,7 +21,7 @@ services:
     ports:
       - "8888:8888"
     volumes:
-      - /home:/tf
+      - C:/Users/Ema/Desktop/Cursos/04 SQL_Server_Docker/Files/01 Sql Server/DBApp_SQL_Server:/tf
     restart: always
 
 
