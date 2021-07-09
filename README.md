@@ -4,6 +4,8 @@
 #### Para la resolución del caso se puede utilizar cualquier lenguaje de programación, herramienta o servicio que considere necesario y pertinente. Nos gustaría ver tu código o implementación.
 #### Esto NO es un examen de ingreso a la empresa, la resolución de este caso nos permite conocer tus habilidades de una forma más práctica.
 
+
+
 * El problema
   * Un proceso ETL toma datos de un archivo y lo deposita en la tabla dbo.Unificado.
   * Por algún error en estos archivos, aparecieron registros duplicados en la tabla.
