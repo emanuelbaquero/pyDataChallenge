@@ -107,7 +107,7 @@ services:
       SA_PASSWORD: "Mi_Super_Mega_Clave_Sql_Server"
       ACCEPT_EULA: "Y"
     volumes:
-      - C:/Users/Ema/Desktop/Pi DE Challenge_LINK/pyDataChallenge/Sql_Server:/tf
+      - /home/pyDataChallenge/airflow_pydata:/tf
     restart: always
   app:
     container_name: python
@@ -118,7 +118,7 @@ services:
     ports:
       - "8888:8888"
     volumes:
-      - C:/Users/Ema/Desktop/Cursos/04 SQL_Server_Docker/Files/01 Sql Server/DBApp_SQL_Server:/tf
+      - /home/pyDataChallenge/airflow_pydata:/tf
     restart: always
 
   airflow-webserver:
