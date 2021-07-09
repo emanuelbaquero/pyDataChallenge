@@ -1,17 +1,13 @@
 # PI Data Engineer Challenge
 
-###### Aclaración inicial
-
-###### Para la resolución del caso se puede utilizar cualquier lenguaje de programación, herramienta o servicio que considere necesario y pertinente. Nos gustaría ver tu código o implementación.
-
-###### Esto NO es un examen de ingreso a la empresa, la resolución de este caso nos permite conocer tus habilidades de una forma más práctica.
-
+#### Aclaración inicial
+#### Para la resolución del caso se puede utilizar cualquier lenguaje de programación, herramienta o servicio que considere necesario y pertinente. Nos gustaría ver tu código o implementación.
+#### Esto NO es un examen de ingreso a la empresa, la resolución de este caso nos permite conocer tus habilidades de una forma más práctica.
 
 * El problema
- * Un proceso ETL toma datos de un archivo y lo deposita en la tabla dbo.Unificado.
- * Por algún error en estos archivos, aparecieron registros duplicados en la tabla.
- * Consultando con el cliente, nos cuenta que es posible que estas cosas sucedan como consecuencia de errores en el sistema que genera estos archivos, pero que siempre ###### tomemos el ultimo registro que fue copiado, considerando que un registro será duplicado si los campos [ID], [MUESTRA] y [RESULTADO] son iguales en dos filas distintas.
-
+  * Un proceso ETL toma datos de un archivo y lo deposita en la tabla dbo.Unificado.
+  * Por algún error en estos archivos, aparecieron registros duplicados en la tabla.
+  * Consultando con el cliente, nos cuenta que es posible que estas cosas sucedan como consecuencia de errores en el sistema que genera estos archivos, pero que siempre tomemos el ultimo registro que fue copiado, considerando que un registro será duplicado si los campos [ID], [MUESTRA] y [RESULTADO] son iguales en dos filas distintas.
 
 * Consignas
   * Montar el backup de la base de datos (SQL Server - .bak)
