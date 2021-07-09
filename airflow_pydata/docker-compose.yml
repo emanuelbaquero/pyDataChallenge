@@ -97,6 +97,30 @@ services:
       retries: 50
     restart: always
 
+  db-sql-server:
+    container_name: sql-server
+    hostname: sql-server
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    ports:
+      - "1433:1433"
+    environment:
+      SA_PASSWORD: "Mi_Super_Mega_Clave_Sql_Server"
+      ACCEPT_EULA: "Y"
+    volumes:
+      - C:/Users/Ema/Desktop/Pi DE Challenge_LINK/pyDataChallenge/Sql_Server:/tf
+    restart: always
+  app:
+    container_name: python
+    hostname: python
+    depends_on:
+      - db-sql-server
+    image: emanuelbaq/pyspark
+    ports:
+      - "8888:8888"
+    volumes:
+      - C:/Users/Ema/Desktop/Cursos/04 SQL_Server_Docker/Files/01 Sql Server/DBApp_SQL_Server:/tf
+    restart: always
+
   airflow-webserver:
     <<: *airflow-common
     command: bash -c "airflow webserver && airflow users create --role Admin --username emanuelbaq --password manaco09 -e baqueroemanuel@gmail.com -f airflow -l airflow" 
@@ -187,8 +211,8 @@ volumes:
   postgres-db-volume:
 
 
-#sudo chmod -R 777 airflow
-#sudo chown -R ubuntu:ubuntu airflow
+#sudo chmod -R 777 pydata
+#sudo chown -R ubuntu:ubuntu pydata
 
 #icacls dags /grant Everyone:F
 #icacls logs /grant Everyone:F

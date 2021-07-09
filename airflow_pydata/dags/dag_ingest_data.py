@@ -28,7 +28,7 @@ def global_data_ingesta():
     from airflow.models import Variable
 
     DATA_CONNECTION = {
-    "SQL_SERVER_IP":"192.168.56.1",
+    "SQL_SERVER_IP":"sql-server",
     "USER_SQL_SERVER":"sa",
     "PASSWORD_SQL_SERVER":Variable.get("password_sql_server_secret"),
     "DATABASE_SQL_SERVER":"Testing_ETL"
