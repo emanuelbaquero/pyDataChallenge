@@ -20,12 +20,12 @@
   * Testearlo y verificar que no haya perdida de información. Documentar.
 
 * Extra
- * Dejar de algún modo programado ese proceso para que se ejecute los lunes de cada semana, a las 5:00 AM.
- * Mejorar el proceso para que guarde logs con la información que crea necesaria (cantidad de filas afectadas, fecha del proceso, instancia de base de datos, etc).
+  * Dejar de algún modo programado ese proceso para que se ejecute los lunes de cada semana, a las 5:00 AM.
+  * Mejorar el proceso para que guarde logs con la información que crea necesaria (cantidad de filas afectadas, fecha del proceso, instancia de base de datos, etc).
 
 * Restricciones
- * No se dispone del SQL Agent para hacer el scheduling, hay que buscar otra forma.
- * La implementación de la base de datos no soporta cursores.
+  * No se dispone del SQL Agent para hacer el scheduling, hay que buscar otra forma.
+  * La implementación de la base de datos no soporta cursores.
 
 
 #### Link al archivo CSV:
